@@ -7,7 +7,7 @@ import wow from "./modules/animated";
 
 
 if(document.querySelector('main').classList.contains('index')) {
-  loadCss('css/style.min.css');
+  loadCss();
 }
 
 document.addEventListener("DOMContentLoaded",  () => {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded",  () => {
   addMenu();
   headerScroll();
   if(document.querySelector('main').classList.contains('index')) {
-    // setTimeout(titleSlider, 3000)
+    setTimeout(titleSlider, 0)
   }
   if(document.querySelector('main').classList.contains('contacts-page')) {
     validateInputEmail();

@@ -10,7 +10,7 @@
     "build": "gulp build"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": "16"
   },
   "browserslist": [
     "last 4 version",
