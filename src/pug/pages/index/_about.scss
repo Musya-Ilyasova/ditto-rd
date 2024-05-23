@@ -1,0 +1,62 @@
+.about {
+  padding: 40px 0;
+  @include mq('768') {
+    padding: 56px 0;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 32px;
+    padding-left: 16px;
+    border-left: 3px solid $main;
+    font-weight: 400;
+    @include mq('768') {
+      font-size: 28px;
+    }
+    @include mq('1280') {
+      font-size: 32px;
+    }
+
+  }
+
+}
+
+
+.about-blocks {
+  @include mq('768') {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-bottom: 16px;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid $br;
+    @include mq('768') {
+      width: 49.4%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__top {
+    .icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &__title {
+    display: block;
+    margin: 8px 0 16px;
+  }
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  .btn {
+    margin-top: 24px;
+    @include mq('768') {
+      margin-top: auto;
+    }
+  }
+
+}

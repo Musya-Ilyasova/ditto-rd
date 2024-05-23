@@ -1,0 +1,29 @@
+section.contacts
+  .container.contacts__container
+    .contacts__content
+      h1.contacts__title Reach out to us
+      p.contacts__text If you have any questions or suggestions - please talk to us and we will do our best to help you
+    form.form.contacts__form(action=process.env.FORM_CONTACT_LINK method="POST" enctype="application/x-www-form-urlencoded; charset=utf-8")
+      .form__item
+        label.form__label(for="email") Email
+        input.form__input#email(type="email" name="email" placeholder="example@mail.com")
+        p.form__error-msg Wrong email
+      .form__item
+        label.form__label(for="telegram") Telegram
+        input.form__input#telegram(type="text" name="telegram" placeholder="@")
+      .form__item
+        label.form__label(for="name") Your name / Company name
+        input.form__input#name(type="text" name="name" placeholder="name")
+      .form__item
+        .form__label(for="message") Describe your inquiry
+        textarea.form__input.form__input_textarea#message(name="message", cols="30", rows="10" placeholder="Leave us a message...")
+      .form__footer
+        button(type="submit").btn.btn_third.contacts__btn Submit
+        a(href=process.env.SOC_TELEGRAM).contacts__link Ask on Telegram
+  .form__response.form__response_success
+    p Successfully sent!
+  .form__response.form__response_error
+    p Something wrong. Please try again later.
+
+
+

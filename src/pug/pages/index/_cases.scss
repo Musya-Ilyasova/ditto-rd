@@ -1,0 +1,93 @@
+.cases {
+  background: $bg-dark;
+  padding: 16px 0;
+  @include mq('768') {
+    padding: 56px 0;
+  }
+  @include mq('1280') {
+    padding: 80px 0;
+  }
+  &__title {
+    color: $text-white;
+    text-align: center;
+    margin-bottom: 16px;
+    @include mq('768') {
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    @include mq('1280') {
+      margin-bottom: 56px;
+    }
+  }
+}
+
+.cases-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq('768') {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  &__img {
+    border: 1px solid $br;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+
+  }
+  &__item {
+    background: $bg;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+    width: 343px;
+    max-width: 100%;
+    @include mq('768') {
+      width: 31.65%;
+    }
+  }
+}
+
+.cases-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq('768') {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    color: $text-white;
+    align-items: center;
+    width: 343px;
+    @include mq('768') {
+      width: 31.65%;
+    }
+    &:not(:last-child) {
+      margin-bottom: 32px;
+      @include mq('768') {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__text {
+    width: calc(100% - 88px);
+    margin-left: 16px;
+    @include mq('1280') {
+      width: calc(100% - 116px);
+    }
+  }
+  &__img {
+    width: 72px;
+    height: 72px;
+    @include mq('1280') {
+      width: 104px;
+      height: 104px;
+    }
+  }
+}

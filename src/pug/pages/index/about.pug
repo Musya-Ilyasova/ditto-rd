@@ -1,0 +1,23 @@
+section.about
+  .container
+    h2.hidden About
+    ul.about-blocks
+      li.about-blocks__item.wow.backLeft(data-wow-delay="0.2s")
+        .about-blocks__top
+          img.icon(src="./img/eigenLogo.svg", alt="EigenLayer")
+          h3.about-blocks__title What is EigenLayer
+        p.about-blocks__text A novel DeFi innovation called restaking enables Ethereum holders to stake their ETH, ensuring the security of Actively Validated Services (AVSs) and earning additional rewards beyond staking returns
+        .btn.btn_primary
+          span.btn__text Docs
+          a(href=process.env.LINK_DOKS).btn__link
+            +icon('btn-arrow')
+      li.about-blocks__item.wow.backRight(data-wow-delay="0.2s")
+        .about-blocks__top
+          img.icon(src="./img/logo-sh.svg", alt="Ditto Logo")
+          h3.about-blocks__title What is Ditto
+        p.about-blocks__text An actively validated keeper network (AVS on Eigenlayer) to execute workflows under predefined conditions in a financially secure and trustless manner
+        .btn.btn_primary
+          span.btn__text Docs
+          a(href=process.env.LINK_DOKS).btn__link
+            +icon('btn-arrow')
+    p.about__text.wow.backInUp(data-wow-delay="0.4s") Keeper networks are essential for users who wish to trigger certain actions under specific conditions. These networks utilize nodes to fulfill 'if-this-then-that' requests

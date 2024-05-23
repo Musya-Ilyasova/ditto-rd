@@ -1,0 +1,50 @@
+//header
+header.header.show
+  .container.header__container
+    a.logo(href=process.env.MAIN_LINK) Ditto logo
+      +icon("logo")
+    .menu__wrapper.header__menu
+      nav
+        ul.menu
+          li.menu__item
+            a.menu__link(href=process.env.LINK_ACCOUNT_SDK target="_blank") Account Abstraction SDK
+          li.menu__item
+            a.menu__link(href=process.env.LINK_DOCKS target="_blank") Documentation
+          li.menu__item
+            span.menu__link.menu__link_submenu Community
+              +icon('chevron')
+            ul.menu__submenu
+              li.menu__subitem
+                a(href=process.env.SOC_TWITTER target="_blank").menu__sublink
+                  +icon('tw')
+                  | Twitter
+              li.menu__subitem
+                a(href=process.env.SOC_DISCORD target="_blank").menu__sublink
+                  +icon('dc')
+                  | Discord
+              li.menu__subitem
+                a(href=process.env.SOC_MEDIUM target="_blank").menu__sublink
+                  +icon('medium')
+                  | Medium
+          li.menu__item
+            a.menu__link(href=process.env.LINK_DITTO_BUILD target="_blank") Ditto BUILD
+          li.menu__item
+            a.menu__link(href=process.env.HEADER_LINK_CONTACTS) Contact us
+      ul.header-soc
+        li.header-soc__item
+          a.header-soc__link(href=process.env.SOC_TWITTER target="_blank") twitter
+            +icon('tw')
+        li.header-soc__item
+          a.header-soc__link(href=process.env.SOC_DISCORD target="_blank") discord
+            +icon('dc')
+        li.header-soc__item
+          a.header-soc__link(href=process.env.SOC_TELEGRAM target="_blank") telegram
+            +icon('tg')
+        li.header-soc__item
+          a.header-soc__link(href=process.env.SOC_GITHUB target="_blank") github
+            +icon('g-hub')
+      a(href=process.env.LINK_RESTAKE target="_blank").btn.btn_third.header__btn Restake
+    button.header__burger menu button
+      i
+      i
+      i

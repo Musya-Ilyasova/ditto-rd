@@ -1,0 +1,17 @@
+include ../mixins/mixins
+doctype html
+html(lang="ru")
+  include ../components/global/head
+  body
+    include ../components/global/header
+    //main
+    main.index
+      include ../pages/index/1-screen
+      include ../pages/index/about
+      include ../pages/index/cases
+      include ../pages/index/restake
+      include ../pages/index/network
+      include ../pages/index/validation
+      include ../pages/index/partners
+    include ../components/global/footer
+    include ../components/global/scripts

@@ -1,0 +1,16 @@
+.validation {
+  display: none;
+  @include mq('768') {
+    display: block;
+    padding: 56px 0;
+  }
+  &__title {
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+
+  }
+}

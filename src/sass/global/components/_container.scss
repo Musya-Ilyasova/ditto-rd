@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding: 0 16px;
+  margin: auto;
+  @include mq('768') {
+    padding: 0 20px;
+  }
+  @include mq('1024') {
+    padding: 0 40px;
+    max-width: 1360px;
+
+  }
+}

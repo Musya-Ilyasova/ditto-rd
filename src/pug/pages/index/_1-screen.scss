@@ -1,0 +1,79 @@
+//first-screen
+.first-sc {
+  padding-top: 112px;
+  padding-bottom: 42px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @include mq('768') {
+    padding-top: 124px;
+    padding-bottom: 55px;
+  }
+  @include mq('1024') {
+    padding-top: 164px;
+    overflow-x: hidden;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    @include mq('1280') {
+      margin-bottom: 20px;
+    }
+    div {
+      @include mq('1280') {
+        line-height: 1.5;
+      }
+    }
+  }
+  &__slider {
+    line-height: 56px;
+    color: $text-white;
+    height: 56px;
+    position: relative;
+    width: 235px!important;
+    margin: 16px auto 0;
+    background: $main;
+    border-radius: 360px;
+    text-align: center;
+    width: auto;
+    @include mq('768') {
+      height: 65px;
+      line-height: 65px;
+      margin-top: 0;
+      width: 309px!important;
+    }
+    @include mq('1280') {
+      line-height: 80px;
+      height: 80px;
+      width: 346px!important;
+    }
+    .keen-slider__slide {
+      padding: 0 10px;
+      font-size: 32px;
+      font-weight: 600;
+      @include mq('768') {
+        font-size: 40px;
+      }
+      @include mq('1280') {
+        font-size: 48px;
+      }
+    }
+  }
+  &__text {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 738px;
+    margin: 0 auto 40px;
+    @include mq('768') {
+      font-weight: 500;
+    }
+    @include mq('1280') {
+      margin-bottom: 47px;
+    }
+  }
+  &__container {
+    text-align: center;
+  }
+}

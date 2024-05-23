@@ -1,0 +1,26 @@
+//COLORS
+:root {
+  --black: #000;
+  --black-rgb: 0, 0, 0;
+  --white: #ffffff;
+  --white-rgb: 255, 255, 255;
+  --green: #00C471;
+  --green-rgb: 0, 196, 113;
+  --green-dark: #009154;
+  --beige-1: #F7F4EB;
+  --beige-1-rgb: 247, 244, 235;
+  --beige-2: #FFFCF4;
+  --gray-dark: #202020;
+  --gray-dark-rgb: 32, 32, 32;
+  --gray: #1F1F1F;
+}
+
+@import "global/helpers/helpers-critical";
+@import "global/libs/libs";
+@import "global/components/components";
+
+@import "../pug/components/global/_header";
+@import "../pug/components/global/_footer";
+@import "../pug/pages/index/_1-screen";
+@import "../pug/pages/contacts/_contacts";
+

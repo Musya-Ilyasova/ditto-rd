@@ -1,0 +1,45 @@
+//footer
+footer.footer
+  .container
+    ul.footer-soc
+      li.footer-soc__item
+        a.footer-soc__link(href=process.env.SOC_TWITTER target="_blank") twitter
+          +icon('tw')
+      li.footer-soc__item
+        a.footer-soc__link(href=process.env.SOC_DISCORD target="_blank") discord
+          +icon('dc')
+      li.footer-soc__item
+        a.footer-soc__link(href=process.env.SOC_TELEGRAM target="_blank") telegram
+          +icon('tg')
+      li.footer-soc__item
+        a.footer-soc__link(href=process.env.SOC_GITHUB target="_blank") github
+          +icon('g-hub')
+    .footer-menu
+      .footer-menu__item
+        span.footer-menu__title Product
+        ul.footer-menu-list
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.LINK_ACCOUNT_SDK target="_blank") Account Abstraction SDK
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.LINK_DITTO_BUILD target="_blank") Ditto BUILD
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.HEADER_LINK_CONTACTS) Contact us
+      .footer-menu__item
+        span.footer-menu__title Resources
+        ul.footer-menu-list
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.LINK_BLOG target="_blank") Blog
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.LINK_COMMUNITY target="_blank") Community
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.LINK_DOCKS target="_blank") Documentation
+      .footer-menu__item
+        span.footer-menu__title Legal
+        ul.footer-menu-list
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.LINK_TERMS_CONDITIONS target="_blank") Terms &amp; Conditions
+          li.footer-menu-list__item
+            a.footer-menu-list__link(href=process.env.LINK_PRIVACY_POLICY target="_blank") Privacy Policy
+    p.footer__copy &copy; 2024 Ditto. All rights reserved.
+    a.footer__logo Ditto logo
+      +icon('logo-footer')

@@ -1,0 +1,79 @@
+.restake {
+  padding: 40px 0;
+}
+
+.restake-blocks {
+  @include mq('768') {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-bottom: 16px;
+    background: $bg-dark2;
+    border-radius: 16px;
+    padding: 24px;
+    color: $text-white;
+    @include mq('768') {
+      width: 49.4%;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include mq('768') {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 46px;
+    }
+  }
+  &__img {
+    width: 186px;
+    height: auto;
+    margin: 24px auto;
+    @include mq('768') {
+      margin: 0;
+      width: 130px;
+    }
+  }
+  .btn {
+    order: 2;
+    @include mq('768') {
+      order: 0;
+    }
+  }
+}
+
+.restake-meeting {
+  background: $main;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include mq('768') {
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-size: 32px;
+  }
+  &__text {
+    font-size: 24px;
+    color: $text-white;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+    @include mq('768') {
+      width: fit-content;
+      margin-bottom: 0;
+    }
+  }
+  .btn_secondary .btn__link{
+    background: $restake-btn;
+  }
+}
