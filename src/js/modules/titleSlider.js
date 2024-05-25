@@ -12,22 +12,23 @@ const titleSlider = () => {
         spacing: 5,
       },
       defaultAnimation: {
-        duration: 1000,
-      }
+        duration: 1500,
+      },
+      mode: 'snap'
     },
     [
       (slider) => {
         let timeout
         let mouseOver = false
         function clearNextTimeout() {
-          clearTimeout(timeout)
+          clearTimeout(timeout);
         }
         function nextTimeout() {
           clearTimeout(timeout)
           if (mouseOver) return
           timeout = setTimeout(() => {
             slider.next()
-          }, 2000)
+          }, 1000)
         }
         slider.on("created", () => {
           slider.slides.forEach(item => item.style.display="");
@@ -39,12 +40,11 @@ const titleSlider = () => {
             mouseOver = false
             nextTimeout()
           })
-          nextTimeout()
+          nextTimeout();
         })
         slider.on("dragStarted", clearNextTimeout)
         slider.on("animationEnded", nextTimeout)
-        slider.on("updated", nextTimeout)
-      },
+      }
     ]
   )
 }

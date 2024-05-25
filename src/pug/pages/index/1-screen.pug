@@ -1,10 +1,14 @@
 //first-screen
 section.first-sc
+  canvas#myCanvas
   .container.first-sc__container
     h1.first-sc__title
       div.wow.fadeIn Ditto Execution Network&nbsp;is
-      span.first-sc__slider.keen-slider.wow.bounceInUp(data-wow-delay="0.2s")
-        span.keen-slider__slide Distributed
-        span.keen-slider__slide(style="display: none") Trustless
-        span.keen-slider__slide(style="display: none") Restaked
+      .first-sc__slider.keen-slider.wow.bounceInUp(data-wow-delay="0.2s")
+        .keen-slider__slide
+          span Distributed
+        .keen-slider__slide(style="display: none")
+          span Trustless
+        .keen-slider__slide(style="display: none")
+          span Restaked
     p.first-sc__text.wow.bounceInUp(data-wow-delay="0.5s") Ditto seamlessly extends Ethereum's capabilities by providing a secure keeper network for running intents based on predefined logic

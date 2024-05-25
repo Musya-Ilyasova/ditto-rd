@@ -7,6 +7,7 @@
   z-index: 1000;
   transform: translateY(-100%);
   transition: all 0.2s ease-in-out;
+  pointer-events: none;
   @include mq('768') {
     padding: 18px 0 32px;
   }
@@ -23,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    pointer-events: all;
     @include mq('1280') {
       justify-content: flex-start;
     }

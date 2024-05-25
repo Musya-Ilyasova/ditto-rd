@@ -51,13 +51,19 @@
     }
     .keen-slider__slide {
       padding: 0 10px;
-      font-size: 32px;
-      font-weight: 600;
-      @include mq('768') {
-        font-size: 40px;
-      }
-      @include mq('1280') {
-        font-size: 48px;
+      span {
+        display: block;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 56px;
+        @include mq('768') {
+          font-size: 40px;
+          line-height: 65px;
+        }
+        @include mq('1280') {
+          font-size: 48px;
+          line-height: 80px;
+        }
       }
     }
   }
@@ -76,4 +82,16 @@
   &__container {
     text-align: center;
   }
+}
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: none;
+  @include mq('768') {
+    display: block;
+  }
+
 }

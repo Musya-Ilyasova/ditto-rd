@@ -4,10 +4,13 @@ import { headerScroll, scrollToTheSection } from "./modules/headerScroll";
 import { validateInputEmail, formSubmit, addResponseMsg } from "./modules/form";
 import titleSlider from "./modules/titleSlider";
 import wow from "./modules/animated";
+import resizeCanvas from "./modules/myCanvas"
 
 
 if(document.querySelector('main').classList.contains('index')) {
   loadCss();
+  // window.addEventListener('resize', resizeCanvas, false);
+  window.addEventListener('load', resizeCanvas, false);
 }
 
 document.addEventListener("DOMContentLoaded",  () => {

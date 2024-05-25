@@ -32,39 +32,16 @@ $header-link: var(--gray-dark);
 $header-link-bg: var(--beige-2);
 $header-link-hover: $main;
 $restake-btn: var(--gray-dark);
-
-
-
-
-$bg-beige: var(--beige-5);
-$text-gray: var(--gray);
-$btn-1-bg-hover: var(--green-dark);
-$btn-2-br: var(--beige-4);
-$btn-2-bg-hover: var(--beige-6);
-$btn-3-bg: transparent;
-$btn-3-br: $main;
-$btn-3-cl: $text;
-$border-color: var(--beige-2);
-$icon-bg: var(--beige-2);
-$icon-br: var(--beige-4);
-$link: $main;
-$link-hover: var(--green-dark);
-$link-br-hover: rgba(var(--green-rgb), 0.4);
-$footer-bg: var(--gray-dark);
-$footer-title: var(--gray);
-$header-bg: rgba(var(--beige-1-rgb), 0.8);
-$header-submenu-br: rgba(var(--black-rgb), 0.02);
-$cicle: rgba(var(--beige-3-rgb), 0.11);
-$platform-sl-bg-1: var(--beige-3);
-$platform-sl-bg-2: var(--beige-green);
-$platform-sl-bg-3: var(--gray-light);
-$tools-bg: var(--beige-2);
-$tools-br: var(--beige-4);
 $input-bg: var(--white);
 $input-ph: rgba(var(--gray-rgb), 0.3);
 $input-br: var(--beige-4);
 $input-error: var(--red);
 $input-success: var(--green);
+$btn-1-bg-hover: var(--green-dark);
+$header-bg: rgba(var(--beige-1-rgb), 0.8);
+$header-submenu-br: rgba(var(--black-rgb), 0.02);
+
+
 
 $breakpoints: ("320": 320px, "375": 375px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px, "1920": 1920px, "2400": 2400px);
 //width container

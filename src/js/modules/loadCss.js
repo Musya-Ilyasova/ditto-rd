@@ -3,7 +3,6 @@ const loadCss = (t, n) => {
   const arrStyles = document.querySelector('head noscript').textContent.split('href="');
   let cssHrefStart = arrStyles[1].trim();
   let cssHref = cssHrefStart.slice(0, cssHrefStart.length-2);
-  console.log(cssHref);
   var i = window.document.createElement("link");
   var o = t || window.document.getElementsByTagName("script")[0];
   i.rel = "stylesheet";
