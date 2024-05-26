@@ -2,7 +2,8 @@ include ../mixins/mixins
 doctype html
 html(lang="ru")
   include ../components/global/head
-  body
+  body.no-scroll
+    include ../components/global/loader
     include ../components/global/header
     //main
     main.index

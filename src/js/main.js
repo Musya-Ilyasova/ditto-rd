@@ -4,14 +4,19 @@ import { headerScroll, scrollToTheSection } from "./modules/headerScroll";
 import { validateInputEmail, formSubmit, addResponseMsg } from "./modules/form";
 import titleSlider from "./modules/titleSlider";
 import wow from "./modules/animated";
-import resizeCanvas from "./modules/myCanvas"
+import resizeCanvas from "./modules/myCanvas";
+import loaderHide from "./modules/loader";
+
 
 
 if(document.querySelector('main').classList.contains('index')) {
   loadCss();
-  // window.addEventListener('resize', resizeCanvas, false);
   window.addEventListener('load', resizeCanvas, false);
 }
+
+window.addEventListener("load", () => {
+  loaderHide();
+})
 
 document.addEventListener("DOMContentLoaded",  () => {
   let vh = window.innerHeight * 0.01;
@@ -32,3 +37,4 @@ document.addEventListener("DOMContentLoaded",  () => {
     addResponseMsg();
   }
 });
+
