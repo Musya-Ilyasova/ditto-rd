@@ -18,6 +18,9 @@
   width: fit-content;
   animation: 40s linear 0s infinite none slider;
   transform: translateX(0);
+  &:hover {
+    animation-play-state: paused;
+  }
   @include mq('768') {
     animation-duration: 30s;
   }
@@ -34,6 +37,9 @@
     @include mq('1600') {
       transform: translateX(-38%);
     }
+    &:hover {
+      animation-play-state: paused;
+    }
   }
   &__item {
     width: 64px;
@@ -41,10 +47,17 @@
     margin: 0 24px;
     border-radius: 50%;
     overflow: hidden;
+
     @include mq('768') {
       width: 100px;
       height: 100px;
       margin: 0 36px;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
   &__wrapper {
