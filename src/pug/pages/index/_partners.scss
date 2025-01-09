@@ -28,19 +28,6 @@
     animation-name: sliderDesktop;
     animation-duration: 15s;
   }
-  &:nth-child(2) {
-    animation: 40s linear 0s infinite none slider2;
-    transform: translateX(-58%);
-    @include mq('768') {
-      animation-duration: 30s;
-    }
-    @include mq('1600') {
-      transform: translateX(-38%);
-    }
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
   &__item {
     width: 64px;
     height: 64px;

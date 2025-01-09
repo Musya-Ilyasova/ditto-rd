@@ -77,6 +77,7 @@
     }
     @include mq('1280') {
       margin-bottom: 47px;
+      font-size: 20px;
     }
   }
   &__container {
