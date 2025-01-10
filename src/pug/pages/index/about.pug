@@ -4,7 +4,16 @@ section.about
     ul.about-blocks
       li.about-blocks__item.wow.bounceInUp(data-wow-delay="0.2s")
         .about-blocks__top
-          img.icon(src="./img/eigen.webp", alt="EigenLayer" type="image/webp")
+          ul.about-links
+            li
+              a(href="https://www.eigenlayer.xyz/" target="_blank")
+                img.icon(src="./img/eigen.webp", alt="EigenLayer" type="image/webp")
+            li
+              a(href="https://symbiotic.fi/" target="_blank")
+                img.icon(src="./img/symbiotic.webp", alt="Symbiotic" type="image/webp")
+            li
+              a(href="https://karak.network/" target="_blank")
+                img.icon(src="./img/karak.webp", alt="Karak" type="image/webp")
           h3.about-blocks__title What is Shared Security?
         p.about-blocks__text A novel DeFi innovation called restaking enables Ethereum holders to stake their ETH, ensuring the security of Actively Validated Services (AVSs) and earning additional rewards beyond staking returns
         .btn.btn_primary
